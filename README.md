@@ -1,5 +1,8 @@
 # govtech-ptp
-import Dump20230930.sql to mysql
+# Mysql
+import `Dump20230930.sql` to mysql
 
-npm start
-
+# Commands
+* Install Dependencies - `npm install`
+* Run Web Server -  `npm start`
+* Run Application - `npm run dev`
