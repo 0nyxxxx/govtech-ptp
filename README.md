@@ -7,8 +7,8 @@ A simple web application which implements a health declaration form and displays
 
 
 ## MySQL
-- SQL Script - `ptp-schema.sql`
-- In MySQL Workbench click on File and Open SQL Script and open `ptp-schema.sql` then click on the lightning symbol
+- SQL Script - `Dump20231002.sql`
+- In MySQL Workbench click on File and Open SQL Script and open `Dump20231002.sql` then click on the lightning symbol
 
 ![image](https://github.com/0nyxxxx/govtech-ptp/assets/146475981/87d8a78b-a437-4ecc-872b-dd4934f9637e)
 
