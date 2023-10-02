@@ -5,6 +5,7 @@ import Input from "../components/Input";
 import XLSX from "xlsx";
 import Modal from "../components/Modal";
 import CheckBox from "../components/Checkbox";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import { symptomCheckboxItems, closeContactRadioItems } from "./Form";
 class Response {
   constructor(Id, Name, Temperature, CloseContact, Symptoms, DateTimeSent) {
@@ -96,7 +97,7 @@ function Responses() {
         responsesArr.forEach((response) => {
           response.forEach((r) => {
             console.log(r);
-            if (r.Name.match(query)) {
+            if (r.Name.toLowerCase().match(query.toLowerCase())) {
               queryResponsesArr.push(r);
             }
           });
@@ -217,7 +218,13 @@ function Responses() {
         className="container bg-light text-dark p-3 mt-5 rounded"
         style={{ height: "705px" }}
       >
-        <h1>Responses</h1>
+        <div className="d-flex justify-content-between align-items-center">
+          <h1>Responses</h1>
+          <Link to="/" className="btn btn-dark text-white">
+            Back
+          </Link>
+        </div>
+
         <Input // Search input
           id={"searchInput"}
           onChange={handleSearchInput}

@@ -86,7 +86,12 @@ function Form() {
   return (
     <>
       <div className="container-md bg-light text-dark p-3 mt-5 rounded">
-        <h1>Health Declaration </h1>
+        <div className="d-flex justify-content-between align-items-center">
+          <h1>Health Declaration </h1>
+          <Link to="/" className="btn btn-dark text-white">
+            Back
+          </Link>
+        </div>
         <form noValidate onSubmit={handleSubmit}>
           <Input
             valid={nameValid}
@@ -133,14 +138,6 @@ function Form() {
           >
             Submit
           </button>
-
-          <Link
-            to="/responses"
-            className="btn btn-info text-white"
-            style={{ backgroundColor: "#008080" }}
-          >
-            View Responses
-          </Link>
         </form>
       </div>
       <Modal
