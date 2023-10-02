@@ -2,7 +2,7 @@
 A simple web application which implements a health declaration form and displays Responses data
 
 ## MySQL
-- SQL Script - `ptp-schema`
+- SQL Script - `ptp-schema.sql`
   
 ### Connection settings
 
